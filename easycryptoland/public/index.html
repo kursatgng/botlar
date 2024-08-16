@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Token Alış-Satış Botu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Easy Token Alış-Satış Botu</h1>
+        </header>
+
+        <div class="market-view">
+            <div id="chart-container">
+                <canvas id="priceChart"></canvas>
+            </div>
+            <div class="order-book">
+                <h2>Alış Emirleri</h2>
+                <ul id="buy-orders">
+                    
+                </ul>
+
+                <h2>Satış Emirleri</h2>
+                <ul id="sell-orders">
+                    
+                </ul>
+            </div>
+        </div>
+
+        <div class="order-form">
+            <h2>Alış/Satış Formu</h2>
+            <form id="trade-form">
+                <label for="order-type">İşlem Türü Seçiniz:</label>
+                <select id="order-type">
+                    <option value="buy">Alış</option>
+                    <option value="sell">Satış</option>
+                </select>
+
+                <label for="order-amount">Miktar (EasyToken):</label>
+                <input type="number" id="order-amount" required>
+
+                <label for="order-price">Fiyat (USDT):</label>
+                <input type="number" id="order-price" required>
+
+                <button type="submit">Emri Gönder</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#chart-container {
+    width: 80%;
+    max-width: 900px;
+    margin-bottom: 30px;
+}
+canvas {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.market-view {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.order-book {
+    width: 35%;
+}
+
+#ordersTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+.order-book h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+#buy-orders, #sell-orders {
+    background-color: #b33030;
+    padding: 10px;
+    border-radius: 5px;
+    list-style: none;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.order-form {
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.order-form h2 {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.order-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#orders-container {
+    width: 80%;
+    max-width: 900px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.order-form input, .order-form select {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.order-form button {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #5cb85c;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.order-form button:hover {
+    background-color: #4cae4c;
+}
